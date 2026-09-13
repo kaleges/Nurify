@@ -79,19 +79,19 @@
 <div class="container">
 
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Last updated: March 22, 2026</p>
+    <p class="subtitle">Last updated: September 13, 2026</p>
 
     <div class="highlight">
-        <strong>TL;DR —</strong> Nurify does not track you, does not sell your data, and does not show ads. Your worship data stays on your device. We only collect what Firebase Authentication requires (email and name) so you can sign in.
+        <strong>TL;DR —</strong> Nurify does not sell your data and does not show ads. Your worship data stays on your device. We collect the email and name needed for <em>optional</em> sign-in, plus anonymous, aggregated usage analytics to improve the app. We never collect your advertising ID and never track you across other apps or websites.
     </div>
 
     <h2>1. Who We Are</h2>
-    <p>Nurify is developed and maintained by <strong>Kaleges</strong> ("we", "us", "our"). This policy explains how Nurify (the "App") handles your information.</p>
+    <p>Nurify is developed and maintained by <strong>Kaleges</strong> ("we", "us", "our"). This policy explains how Nurify (the "App"), available on iOS and Android, handles your information.</p>
 
     <h2>2. Information We Collect</h2>
 
     <p><strong>2.1 Account Information (Firebase Authentication)</strong></p>
-    <p>When you create an account or sign in, we collect:</p>
+    <p>Sign-in is optional. If you create an account or sign in, we collect:</p>
     <ul>
         <li><strong>Email address</strong> — to identify your account</li>
         <li><strong>Display name</strong> — to personalize your experience</li>
@@ -100,52 +100,63 @@
     <p>This data is processed by <a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> and is used solely for authentication and app functionality.</p>
 
     <p><strong>2.2 Worship &amp; App Data</strong></p>
-    <p>Your prayer logs, dhikr counts, fasting records, Quran bookmarks, streaks, and preferences are stored <strong>locally on your device</strong> using Apple's SwiftData framework. This data is not transmitted to any server.</p>
+    <p>Your prayer logs, dhikr counts, fasting records, Quran bookmarks, streaks, and preferences are stored <strong>locally on your device</strong> (using SwiftData on iOS and Room/DataStore on Android). If you choose to sign in, this data may also be synced to your private Firebase Firestore space so you can restore it on another device.</p>
 
     <p><strong>2.3 Location (Optional)</strong></p>
-    <p>If you grant permission, the App accesses your location <strong>only</strong> to calculate accurate prayer times and Qibla direction. Location data is processed on-device and is never sent to our servers.</p>
+    <p>If you grant permission, the App accesses your location <strong>only</strong> to calculate accurate prayer times and Qibla direction. Your precise location is processed on-device and is never sent to our servers.</p>
+
+    <p><strong>2.4 Usage Analytics (Firebase Analytics)</strong></p>
+    <p>To understand how the App is used and to improve it, we use Firebase Analytics, which collects anonymous, aggregated data such as:</p>
+    <ul>
+        <li><strong>App interactions</strong> — which screens and features are used (e.g. opening a surah, completing dhikr)</li>
+        <li><strong>A Firebase app-instance identifier</strong> — an analytics ID, not an advertising ID</li>
+        <li><strong>Approximate, city-level location</strong> — derived from your IP address by Google</li>
+    </ul>
+    <p>This analytics data is <strong>not</strong> linked to advertising, is never used to serve ads, and is never sold. It does not include your account password, your worship content, your precise location, or the contents of your messages, photos, or files.</p>
 
     <h2>3. Information We Do NOT Collect</h2>
     <ul>
-        <li>We do <strong>not</strong> use analytics or tracking SDKs</li>
-        <li>We do <strong>not</strong> collect device identifiers for advertising</li>
+        <li>We do <strong>not</strong> collect your advertising ID (Android AD_ID) or IDFA (iOS)</li>
+        <li>We do <strong>not</strong> track you across other apps or websites</li>
         <li>We do <strong>not</strong> serve ads or use ad networks</li>
-        <li>We do <strong>not</strong> sell, rent, or share your data with third parties</li>
-        <li>We do <strong>not</strong> create user profiles for marketing purposes</li>
+        <li>We do <strong>not</strong> sell or rent your data, or share it with third parties for their own purposes</li>
+        <li>We do <strong>not</strong> create user profiles for advertising or marketing</li>
     </ul>
 
     <h2>4. How We Use Your Information</h2>
     <p>The limited data we collect is used exclusively to:</p>
     <ul>
         <li>Authenticate your account and enable sign-in</li>
-        <li>Provide core app features (prayer times, notifications)</li>
+        <li>Provide core app features (prayer times, notifications, cloud sync)</li>
         <li>Sync your preferences if you sign in on a new device</li>
+        <li>Understand aggregate usage and improve the App (analytics)</li>
     </ul>
 
     <h2>5. Data Storage &amp; Security</h2>
     <ul>
-        <li>Authentication data is stored securely by Firebase (Google Cloud infrastructure)</li>
-        <li>Local app data resides on your device and is protected by iOS encryption</li>
-        <li>We do not maintain separate servers or databases for user content</li>
+        <li>Data is encrypted in transit (HTTPS/TLS) between the App and Firebase</li>
+        <li>Authentication and synced data are stored securely by Firebase (Google Cloud infrastructure)</li>
+        <li>Local app data resides on your device and is protected by the operating system's encryption (iOS Data Protection / Android encryption)</li>
     </ul>
 
     <h2>6. Third-Party Services</h2>
-    <p>Nurify uses the following third-party services:</p>
+    <p>Nurify uses the following Google Firebase services:</p>
     <ul>
         <li><strong>Firebase Authentication</strong> — account management (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</li>
-        <li><strong>Firebase Cloud Messaging</strong> — push notifications (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</li>
         <li><strong>Firebase Firestore</strong> — cloud data sync (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</li>
+        <li><strong>Firebase Cloud Messaging</strong> — push notifications (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</li>
+        <li><strong>Firebase Analytics</strong> — anonymous, aggregated usage analytics (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</li>
     </ul>
 
     <h2>7. Children's Privacy</h2>
-    <p>Nurify does not knowingly collect personal information from children under 13. The App is suitable for all ages, and parental guidance is recommended for younger users.</p>
+    <p>Nurify is intended for a general audience (ages 13 and older). We do not knowingly collect personal information from children under 13. If you believe a child has provided us personal information, contact us and we will delete it.</p>
 
     <h2>8. Your Rights</h2>
     <p>You can at any time:</p>
     <ul>
-        <li><strong>Delete your account</strong> — through the App's Settings, which removes your Firebase authentication data</li>
+        <li><strong>Delete your account</strong> — through the App's Settings, or via our <a href="delete-account.html">account deletion page</a>, which removes your authentication and cloud-synced data</li>
         <li><strong>Delete local data</strong> — by uninstalling the App</li>
-        <li><strong>Revoke location access</strong> — through iOS Settings</li>
+        <li><strong>Revoke location access</strong> — through your device Settings (iOS or Android)</li>
         <li><strong>Request data export or deletion</strong> — by contacting us</li>
     </ul>
 
